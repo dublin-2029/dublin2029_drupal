@@ -15,6 +15,9 @@ contexts:
         source: 'Member List'
         translation: 'Supporter List'
       -
+        source: 'Member no'
+        translation: 'Supporter no'
+      -
         source: 'Member Portal'
         translation: 'Supporter Portal'
       -
@@ -41,3 +44,9 @@ contexts:
       -
         source: 'What would you like on your badge?'
         translation: 'How would you like your name to display?'
+      -
+        source: 'Badge name'
+        translation: 'Preferred name'
+      -
+        source: 'Member type'
+        translation: 'Supporter type'
