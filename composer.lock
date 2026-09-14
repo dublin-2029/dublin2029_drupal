@@ -1039,17 +1039,17 @@
         },
         {
             "name": "drupal/conreg",
-            "version": "1.0.0-beta2",
+            "version": "1.0.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/conreg.git",
-                "reference": "1.0.0-beta2"
+                "reference": "1.0.0-beta3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/conreg-1.0.0-beta2.zip",
-                "reference": "1.0.0-beta2",
-                "shasum": "b2bb5c80489cdea967e4902b8ce1a8063c47d512"
+                "url": "https://ftp.drupal.org/files/projects/conreg-1.0.0-beta3.zip",
+                "reference": "1.0.0-beta3",
+                "shasum": "7e41c1ca4920a19ce1781be52ae63c263c7451a2"
             },
             "require": {
                 "drupal/core": "^11.2 || ^12",
@@ -1073,8 +1073,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.0-beta2",
-                    "datestamp": "1788505948",
+                    "version": "1.0.0-beta3",
+                    "datestamp": "1789212507",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2021,46 +2021,35 @@
         },
         {
             "name": "drupal/registration_theme",
-            "version": "1.0.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/registration_theme.git",
-                "reference": "1.0.0-beta1"
-            },
+            "version": "1.0.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/registration_theme-1.0.0-beta1.zip",
-                "reference": "1.0.0-beta1",
-                "shasum": "77e210f543d7f139a3c00f537c11c5c85572c5ff"
+                "type": "path",
+                "url": "themes/registration_theme",
+                "reference": "8d308fdc55566ee9075f529e29f65faf38ad3b8a"
             },
             "require": {
-                "drupal/core": "^11"
+                "php": ">=8.3"
             },
             "type": "drupal-theme",
-            "extra": {
-                "drupal": {
-                    "version": "1.0.0-beta1",
-                    "datestamp": "1788766445",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
             "authors": [
                 {
-                    "name": "lostcarpark",
-                    "homepage": "https://www.drupal.org/user/346773"
+                    "name": "James Shields",
+                    "homepage": "https://www.drupal.org/u/lostcarpark",
+                    "role": "Maintainer"
                 }
             ],
-            "description": "A Drupal 11 base theme for ConReg-powered convention/event registration sites, providing accessible page structure, a configurable color palette, and ConReg registration-form styling. Usable standalone or as a base theme for site-specific subthemes.",
+            "description": "A theme designed for ConReg registration sites. Can be standalone or a base theme.",
             "homepage": "https://www.drupal.org/project/registration_theme",
             "support": {
+                "issues": "https://www.drupal.org/project/issues/registration_theme",
                 "source": "https://git.drupalcode.org/project/registration_theme"
+            },
+            "transport-options": {
+                "symlink": true,
+                "relative": true
             }
         },
         {
@@ -2261,16 +2250,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "13.7.7",
+            "version": "13.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "1166ab05f297d73e24741f8f5fdcc421e77365b8"
+                "reference": "a5529118232c722c052ad6ae3be587df43c7d6fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/1166ab05f297d73e24741f8f5fdcc421e77365b8",
-                "reference": "1166ab05f297d73e24741f8f5fdcc421e77365b8",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/a5529118232c722c052ad6ae3be587df43c7d6fa",
+                "reference": "a5529118232c722c052ad6ae3be587df43c7d6fa",
                 "shasum": ""
             },
             "require": {
@@ -2398,7 +2387,7 @@
                 "issues": "https://github.com/drush-ops/drush/issues",
                 "security": "https://github.com/drush-ops/drush/security/advisories",
                 "slack": "https://drupal.slack.com/messages/C62H9CWQM",
-                "source": "https://github.com/drush-ops/drush/tree/13.7.7"
+                "source": "https://github.com/drush-ops/drush/tree/13.8.0"
             },
             "funding": [
                 {
@@ -2406,7 +2395,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-09-04T03:42:35+00:00"
+            "time": "2026-09-08T18:24:55+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -3359,16 +3348,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v5.8.0",
+            "version": "v5.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "044a6a392ff8ad0d61f14370a5fbbd0a0107152f"
+                "reference": "9e33da9553fe7786f0962b35f4e4ecf01be89def"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/044a6a392ff8ad0d61f14370a5fbbd0a0107152f",
-                "reference": "044a6a392ff8ad0d61f14370a5fbbd0a0107152f",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/9e33da9553fe7786f0962b35f4e4ecf01be89def",
+                "reference": "9e33da9553fe7786f0962b35f4e4ecf01be89def",
                 "shasum": ""
             },
             "require": {
@@ -3410,9 +3399,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v5.8.0"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.9.0"
             },
-            "time": "2026-07-04T14:30:18+00:00"
+            "time": "2026-09-13T18:51:52+00:00"
         },
         {
             "name": "pear/archive_tar",
@@ -7891,7 +7880,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "drupal/conreg": 10,
-        "drupal/registration_theme": 10
+        "drupal/registration_theme": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
