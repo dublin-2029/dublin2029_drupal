@@ -6,4 +6,4 @@ definitions:
     parent: ''
     weight: -50
     expanded: false
-    enabled: true
+    enabled: false

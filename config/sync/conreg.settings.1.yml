@@ -13,7 +13,7 @@ payments:
 badge_types: "P|Supporter\r\nF|Friend\r\nS|Super Friend\r\n"
 badge_name_options: "F|Given name only\r\nN|Full name\r\nL|Family name, given name\r\nO|Something else\r\n"
 badge_name_default: F
-days: "W|Weekend\r\nFr|Friday\r\nSa|Saturday\r\nSu|Sunday\r\n"
+days: "W|Not applicable\r\nFr|Friday\r\nSa|Saturday\r\nSu|Sunday\r\n"
 member_no_digits: '4'
 registration_intro: 'This is a test site. You will not be registered for any convention.'
 payment_intro: 'This is a test payment. Do not use real credit cards. No charges will be applied. Sample test card: 4242424242424242 (use any future date and any 3 digits for CVV).'
@@ -28,8 +28,23 @@ member_listing_page:
   show_member_no: false
   show_countries: false
   show_summary: true
+  default_sort: member_no
+  deduplicate: false
 display:
   page_size: 50
+add-ons:
+  Donation:
+    addon:
+      active: 1
+      global: 1
+      free: true
+      label: 'Additional donation'
+      description: 'Would you like to add an additional donation to assist with bid expenses?'
+      options: ''
+      weight: 0
+    info:
+      label: ''
+      description: ''
 member_type_default: ''
 member:
   classes:
@@ -165,6 +180,8 @@ member_editable:
 checkin:
   display: 'N'
   communication_method: E
+  label_printing_enabled: false
+  print_api_key: ''
 thanks:
   title: 'Thank You'
   thank_you_message: "<p>Thank you for supporting [event_name]!</p><p>You will also receive an email confirmation. If you don't see it, please check your Spam folder.</p><p>Your payment reference is <strong>[reference]</strong>.</p>"
@@ -185,7 +202,7 @@ reference:
   no_country_label: ''
 conreg_options:
   option_groups: '1|checkboxes|mailinglists|Join our mailing lists|0|1'
-  options: "1|1|Get news and updates about the bid|default|0|1|Default|0|0|\r\n2|1|Get updates for volunteers||0|1|Default|0|0|"
+  options: "1|1|Get news and updates about the bid||0|1|Default|0|0|\r\n2|1|Get updates for volunteers||0|1|Default|0|0|"
 closed_message_text: ''
 closed_message_format: basic_html
 member_upgrades: ''
