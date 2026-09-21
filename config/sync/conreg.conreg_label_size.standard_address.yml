@@ -1,0 +1,9 @@
+uuid: 2b83349b-ab46-4ccd-a525-968be2867ab2
+langcode: en
+status: true
+dependencies: {  }
+id: standard_address
+label: 'Standard Address (28 x 89mm)'
+width_mm: 28
+height_mm: 89
+rotate_degrees: 90
