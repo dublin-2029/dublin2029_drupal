@@ -2019,16 +2019,34 @@
         },
         {
             "name": "drupal/registration_theme",
-            "version": "1.0.x-dev",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/registration_theme.git",
+                "reference": "1.0.0"
+            },
             "dist": {
-                "type": "path",
-                "url": "themes/registration_theme",
-                "reference": "8d308fdc55566ee9075f529e29f65faf38ad3b8a"
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/registration_theme-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "086084301e177c39c3ad60d0a9e8905ded0986f9"
             },
             "require": {
+                "drupal/core": "^11",
                 "php": ">=8.3"
             },
             "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1788917246",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -2042,12 +2060,8 @@
             "description": "A theme designed for ConReg registration sites. Can be standalone or a base theme.",
             "homepage": "https://www.drupal.org/project/registration_theme",
             "support": {
-                "issues": "https://www.drupal.org/project/issues/registration_theme",
-                "source": "https://git.drupalcode.org/project/registration_theme"
-            },
-            "transport-options": {
-                "symlink": true,
-                "relative": true
+                "source": "https://git.drupalcode.org/project/registration_theme",
+                "issues": "https://www.drupal.org/project/issues/registration_theme"
             }
         },
         {
@@ -7878,11 +7892,11 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "drupal/conreg": 10,
-        "drupal/registration_theme": 20
+        "drupal/registration_theme": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
 }
