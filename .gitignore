@@ -21,8 +21,12 @@
 # Environment-specific settings (per-machine, dropped by Ansible or created locally).
 /web/sites/*/settings.local.php
 
-# Local key files.
-*.key
+# Local secret files (Stripe/MailerLite API keys, consumed by the Drupal
+# `key` module's file provider). Named .txt rather than .key so they don't
+# read as real encryption key material.
+/stripe-secret.txt
+/stripe-public.txt
+/mailerlite.txt
 
 # Local dev/IDE noise.
 .ddev/.env*
