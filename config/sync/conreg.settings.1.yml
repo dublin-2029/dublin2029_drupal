@@ -130,7 +130,7 @@ member:
       days: null
       confirmation:
         easy_email_type: ''
-    'YA':
+    YA:
       name: 'Friend (Young Adult)'
       description: '<ul><li data-list-item-id="e9c188098c4012eaadf9916b31ba1670d">Help the bid</li><li data-list-item-id="e5ff75f261ae9b5bf1347b25b3cdd4eaa">Attending supplement (should we win the bid)<br><a href="https://staging.dublin2029.ie/support-the-bid/explaining-worldcon-wsfs-memberships/#attending-supplements-for-friend-supporters">What does this mean?</a></li></ul><p><em>Must be born on or after 1 January 2004 (i.e. turning no more than 25 in 2029)</em></p>'
       descriptionFormat: basic_html
@@ -206,7 +206,7 @@ member_edit:
   badge_name_editable: 1
 member_portal:
   add_role: '0'
-  show_days_column: true
+  show_days_column: false
 reference:
   default_country: IE
   geoplugin: 1
