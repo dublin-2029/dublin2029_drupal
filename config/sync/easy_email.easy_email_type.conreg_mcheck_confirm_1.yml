@@ -3,27 +3,27 @@ langcode: en
 status: true
 dependencies: {  }
 id: conreg_mcheck_confirm_1
-label: 'ConReg: member found (event 1)'
-key: null
+label: 'ConReg: supporter found'
+key: ''
 recipient: {  }
 cc: {  }
 bcc: {  }
-fromName: null
-fromAddress: null
-replyToAddress: null
-subject: 'Your [event_name] support status'
-inboxPreview: null
+fromName: ''
+fromAddress: ''
+replyToAddress: ''
+subject: 'Your [conreg:event-name] support status'
+inboxPreview: 'This is to confirm your support status for [conreg:event-name].'
 bodyHtml:
-  value: '<p>Hi [first_name],</p><p>This is to confirm your support status for [event_name].</p><p>Your supporter details are:</p><p>[member_details]</p><p>If you need to change anything, please log in by clicking here: [login_url]</p><p>Best wishes,</p><p>The [event_name] team.</p>'
+  value: '<p>Hi [conreg:member:first-name],</p><p>This is to confirm your support status for [conreg:event-name].</p><p>Your supporter details are:</p><p>[conreg:member-details]</p><p>If you need to change anything, please visit in to <a href="[conreg:member:login-url]">our supporter portal</a>.</p><p>Best wishes,</p><p>The [conreg:event-name] team.</p>'
   format: full_html
-bodyPlain: null
+bodyPlain: "Hi [conreg:member:first-name],\r\n\r\nThis is to confirm your support status for [conreg:event-name].\r\n\r\nYour supporter details are:\r\n\r\n[conreg:member-details]\r\n\r\nIf you need to change anything, please visit in to our supporter portal: [conreg:member:login-url]\r\n\r\nBest wishes,\r\n\r\nThe [conreg:event-name] team."
 generateBodyPlain: false
 attachment: {  }
-saveAttachment: null
-attachmentScheme: null
-attachmentDirectory: null
+saveAttachment: false
+attachmentScheme: public
+attachmentDirectory: ''
 saveEmail: true
 allowSavingEmail: true
 purgeEmails: false
 purgeInterval: null
-purgePeriod: days
+purgePeriod: null

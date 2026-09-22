@@ -100,7 +100,7 @@ member:
         county: null
         postcode: null
   types:
-    P:
+    S:
       name: Supporter
       description: '<ul><li data-list-item-id="eea46fefb0924c68bd8df23d3e3faecd0">Help the bid</li></ul>'
       descriptionFormat: basic_html
@@ -112,7 +112,9 @@ member:
       active: 1
       allowDuplicates: false
       defaultDays: W
-      confirmation: {  }
+      days: null
+      confirmation:
+        easy_email_type: ''
     F:
       name: Friend
       description: '<ul><li data-list-item-id="e2eae34bee8ac72bf7ad417c8f06b7544">Help the bid</li><li data-list-item-id="e7425731942b109154a852cb77a2af8ab">Attending supplement (should we win the bid)<br><a href="https://staging.dublin2029.ie/support-the-bid/explaining-worldcon-wsfs-memberships/#attending-supplements-for-friend-supporters">What does this mean?</a></li></ul>'
@@ -125,12 +127,14 @@ member:
       active: 1
       allowDuplicates: false
       defaultDays: W
-      confirmation: {  }
-    'Y':
+      days: null
+      confirmation:
+        easy_email_type: ''
+    'YA':
       name: 'Friend (Young Adult)'
       description: '<ul><li data-list-item-id="e9c188098c4012eaadf9916b31ba1670d">Help the bid</li><li data-list-item-id="e5ff75f261ae9b5bf1347b25b3cdd4eaa">Attending supplement (should we win the bid)<br><a href="https://staging.dublin2029.ie/support-the-bid/explaining-worldcon-wsfs-memberships/#attending-supplements-for-friend-supporters">What does this mean?</a></li></ul><p><em>Must be born on or after 1 January 2004 (i.e. turning no more than 25 in 2029)</em></p>'
       descriptionFormat: basic_html
-      price: '150'
+      price: '75'
       number_allowed: null
       badgeType: F
       memberClass: Default
@@ -138,8 +142,10 @@ member:
       active: 1
       allowDuplicates: false
       defaultDays: W
-      confirmation: {  }
-    S:
+      days: null
+      confirmation:
+        easy_email_type: ''
+    SF:
       name: 'Super Friend'
       description: '<ul><li data-list-item-id="e9290ac53a05c11641fbb82ca07247ee1">Help the bid</li><li data-list-item-id="e21db0fde3710a4de92b63abd75c134c7">Attending supplement (should we win the bid)<br><a href="https://staging.dublin2029.ie/support-the-bid/explaining-worldcon-wsfs-memberships/#attending-supplements-for-friend-supporters">What does this mean?</a></li><li data-list-item-id="ee2ed240e7328d3514931550c5cca89c9">Tokens of our thanks</li></ul>'
       descriptionFormat: basic_html
@@ -151,7 +157,9 @@ member:
       active: 1
       allowDuplicates: false
       defaultDays: W
-      confirmation: {  }
+      days: null
+      confirmation:
+        easy_email_type: ''
 submit:
   payment: 'Proceed to Payment Page'
   free: 'Complete Support'
@@ -184,7 +192,7 @@ checkin:
   print_api_key: ''
 thanks:
   title: 'Thank You'
-  thank_you_message: "<p>Thank you for supporting [event_name]!</p><p>You will also receive an email confirmation. If you don't see it, please check your Spam folder.</p><p>Your payment reference is <strong>[reference]</strong>.</p>"
+  thank_you_message: "<p>Thank you for supporting [conreg:event-name]!</p><p>You will also receive an email confirmation. If you don't see it, please check your Spam folder.</p><p>Your payment reference is <strong>[conreg:member:payment-id]</strong>.</p>"
   thank_you_format: basic_html
 member_check:
   title: 'Check supporter details'
@@ -196,6 +204,9 @@ member_edit:
   intro_format: basic_html
   email_editable: 0
   badge_name_editable: 1
+member_portal:
+  add_role: '0'
+  show_days_column: true
 reference:
   default_country: IE
   geoplugin: 1
@@ -209,5 +220,3 @@ member_upgrades: ''
 discount:
   enable: 0
   free_every: null
-member_portal:
-  add_role: '0'
