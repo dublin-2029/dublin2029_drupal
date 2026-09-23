@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dd30e5ff0136ff564bcc09d1d4d553b0",
+    "content-hash": "5dce9b730f6d121f99c40fc827b28e9c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2019,17 +2019,17 @@
         },
         {
             "name": "drupal/registration_theme",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/registration_theme.git",
-                "reference": "1.0.0"
+                "reference": "1.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/registration_theme-1.0.0.zip",
-                "reference": "1.0.0",
-                "shasum": "086084301e177c39c3ad60d0a9e8905ded0986f9"
+                "url": "https://ftp.drupal.org/files/projects/registration_theme-1.0.1.zip",
+                "reference": "1.0.1",
+                "shasum": "6fffe59de4be257e88b059f6557daa2aec4dfd8d"
             },
             "require": {
                 "drupal/core": "^11",
@@ -2038,8 +2038,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "1.0.0",
-                    "datestamp": "1788917246",
+                    "version": "1.0.1",
+                    "datestamp": "1790186201",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"

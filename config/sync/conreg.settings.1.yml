@@ -67,6 +67,7 @@ member:
         communication_method: null
         communication_method_description: 'If you select printed communications, you will receive two progress reports during the year.'
         same_address: 'Same as supporter 1'
+        address_heading: 'Where do you live?'
         street: 'Address line 1 (optional)'
         street2: 'Address line 2 (optional)'
         city: 'Town/City (optional)'
@@ -169,7 +170,7 @@ confirmation:
   from_email: supporterservices@dublin2029.ie
   copy_email_to: ''
   easy_email_type: conreg_registration_1
-  notification_subject: '[full_name] has supported [event_name] '
+  notification_subject: '[conreg:member:full-name] has supported [conreg:event-name] '
 member_editable:
   first_name: 1
   last_name: 1
