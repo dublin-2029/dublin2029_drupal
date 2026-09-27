@@ -166,7 +166,7 @@ submit:
   free: 'Complete Support'
 confirmation:
   copy_us: 1
-  from_name: 'Default event'
+  from_name: 'Dublin 2029 Bid'
   from_email: supporterservices@dublin2029.ie
   copy_email_to: ''
   easy_email_type: conreg_registration_1
