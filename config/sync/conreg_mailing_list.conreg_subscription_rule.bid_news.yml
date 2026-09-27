@@ -1,0 +1,13 @@
+uuid: 6dda3019-6eb3-4f65-b0af-6f6b41f7fb2b
+langcode: en
+status: true
+dependencies: {  }
+id: bid_news
+label: 'Bid news'
+description: ''
+eid: 1
+provider: mailerlite
+list_id: '106258581178811864'
+list_name: 'Interested in the Bid and Supportive of it'
+communication_method: _any
+member_option: 1
