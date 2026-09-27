@@ -44,7 +44,9 @@
 #}
 <div class="layout-container">
 
-  <header class="site-masthead{{ page.hero ? ' site-masthead--overlay' : '' }}" data-sticky-nav>
+  {# Without a hero there's nothing to float over, so render the masthead in its
+     compact stuck state from the start. #}
+  <header class="site-masthead{{ page.hero ? ' site-masthead--overlay' : ' is-stuck' }}" data-sticky-nav>
     <div class="site-masthead__inner container">
       <div class="site-masthead__branding">
         {{ page.header }}
@@ -66,8 +68,6 @@
         {{ page.hero }}
       </div>
     </div>
-  {% else %}
-    <div data-sticky-sentinel></div>
   {% endif %}
 
   {{ page.breadcrumb }}

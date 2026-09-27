@@ -112,10 +112,10 @@ closer. `color-mix()` can't rotate hue - none of the 3 base tokens carry
 any cyan, so mixing among them or toward black/white can't reach `#0085ca`
 exactly - and the maths work out so that mixing `--rt-primary` toward
 white doesn't help either (the target's zero red channel is unreachable
-either way, and lightening only pushes red further from zero). The
-closest achievable approximation turned out to be the plain, unmixed
-`--rt-primary`/`--rt-primary-500` (`#215bc2`) itself, used now instead of
-`--rt-primary-600` in `hero.css`, `footer.css`, and `site-nav.css`.
+either way, and lightening only pushes red further from zero). So
+`footer.css` and `site-nav.css` use `#0085ca` directly rather than an
+`--rt-*` token. `hero.css` still uses the closest token approximation,
+the plain, unmixed `--rt-primary-500` (`#215bc2`).
 
 Note: Registration Theme's settings form also includes a banner image
 path/position field (inherited automatically, since theme-settings hooks
