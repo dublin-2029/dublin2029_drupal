@@ -15,7 +15,7 @@ badge_name_options: "F|Given name only\r\nN|Full name\r\nL|Family name, given na
 badge_name_default: F
 days: "W|Not applicable\r\nFr|Friday\r\nSa|Saturday\r\nSu|Sunday\r\n"
 member_no_digits: '4'
-registration_intro: 'This is a test site. You will not be registered for any convention.'
+registration_intro: 'Thank you for choosing to support the Dublin 2029 bid. Your money will help us put forward the best bid for a Worldcon we can.'
 payment_intro: 'This is a test payment. Do not use real credit cards. No charges will be applied. Sample test card: 4242424242424242 (use any future date and any 3 digits for CVV).'
 communications_method:
   options: "E|Electronic|1\r\nP|Paper|1\r\nB|Both|0\r\n"
