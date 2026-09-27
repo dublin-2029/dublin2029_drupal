@@ -111,7 +111,7 @@ member:
       memberClass: Default
       allowFirst: 1
       active: 1
-      allowDuplicates: false
+      allowDuplicates: true
       defaultDays: W
       days: null
       confirmation:
