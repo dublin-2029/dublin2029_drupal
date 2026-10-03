@@ -120,7 +120,7 @@ member:
       name: Friend
       description: '<ul><li data-list-item-id="e2eae34bee8ac72bf7ad417c8f06b7544">Help the bid</li><li data-list-item-id="e7425731942b109154a852cb77a2af8ab">Attending supplement (should we win the bid)<br><a href="https://staging.dublin2029.ie/support-the-bid/explaining-worldcon-wsfs-memberships/#attending-supplements-for-friend-supporters">What does this mean?</a></li></ul>'
       descriptionFormat: basic_html
-      price: '150'
+      price: '175'
       number_allowed: null
       badgeType: F
       memberClass: Default
