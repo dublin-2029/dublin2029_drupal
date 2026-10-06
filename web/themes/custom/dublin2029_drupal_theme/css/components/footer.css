@@ -9,10 +9,8 @@
  * role specifically - a deliberate, documented, slightly darker footer as
  * part of this migration (see the subtheme conversion plan).
  *
- * The bullet/link/social-icon accent color uses --rt-primary-500 (the raw,
- * unmixed color), not -600: the original accent color (#0085ca) was
- * brighter than the button/primary color, not darker, so a darkening mix
- * moves further from it, not closer.
+ * The bullet/link/social-icon accent color uses #0085ca directly, since no
+ * --rt-* token can reach its hue.
  */
 
 .site-footer {
@@ -75,11 +73,11 @@
   top: 0.5em;
   width: 6px;
   height: 6px;
-  background-color: var(--rt-primary-500);
+  background-color: #0085ca;
 }
 
 .site-footer a {
-  color: var(--rt-primary-500);
+  color: #0085ca;
 }
 .site-footer a:hover,
 .site-footer a:focus {
@@ -103,7 +101,7 @@
   width: 36px;
   height: 36px;
   padding: 0;
-  background-color: var(--rt-primary-500);
+  background-color: #0085ca;
   color: var(--rt-neutral-900);
 }
 

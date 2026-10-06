@@ -50,3 +50,117 @@ contexts:
       -
         source: 'Member type'
         translation: 'Supporter type'
+      -
+        source: 'Member registration to @event_name for @first_name @last_name'
+        translation: 'Supporter registration to @event_name for @first_name @last_name'
+      -
+        source: 'Member registration for @first_name @last_name'
+        translation: 'Supporter registration for @first_name @last_name'
+      -
+        source: 'Member Number'
+        translation: 'Supporter Number'
+      -
+        source: 'Price for member'
+        translation: 'Price for supporter'
+      -
+        source: 'Add-on Total for member'
+        translation: 'Add-on Total for supporter'
+      -
+        source: 'Member Total'
+        translation: 'Supporter Total'
+      -
+        source: 'Check Membership'
+        translation: 'Check Supporter Status'
+      -
+        source: 'List Members'
+        translation: 'List Supporters'
+      -
+        source: 'Edit Member'
+        translation: 'Edit Supporter'
+      -
+        source: Member
+        translation: Supporter
+      -
+        source: 'Member details'
+        translation: 'Supporter details'
+      -
+        source: 'Member number: @member_no'
+        translation: 'Supporter number: @member_no'
+      -
+        source: 'Save member'
+        translation: 'Save supporter'
+      -
+        source: 'Add Members'
+        translation: 'Add Supporters'
+      -
+        source: 'Unpaid Members and Add-ons'
+        translation: 'Unpaid Supporters and Add-ons'
+      -
+        source: 'Please select a member type'
+        translation: 'Please select a supporter type'
+      -
+        source: 'Not available for Member 1'
+        translation: 'Not available for Supporter 1'
+      -
+        source: 'Free member!'
+        translation: 'Free supporter!'
+      -
+        source: 'Free member! Price for add-on: @symbol<span id="@id">@price</span>'
+        translation: 'Free supporter! Price for add-on: @symbol<span id="@id">@price</span>'
+      -
+        source: 'Price for member #@number: @symbol<span id="@id">@price</span>'
+        translation: 'Price for supporter #@number: @symbol<span id="@id">@price</span>'
+      -
+        source: 'Email address required for first member.'
+        translation: 'Email address required for first supporter.'
+      -
+        source: 'If you do not provide an email, you will have to get convention updates from the first member.'
+        translation: 'If you do not provide an email, you will have to get bid updates from the first supporter.'
+      -
+        source: 'Member %first has the same email address as member %second.'
+        translation: 'Supporter %first has the same email address as supporter %second.'
+      -
+        source: 'Failed to save member. Please try again or contact site admin.'
+        translation: 'Failed to save supporter. Please try again or contact site admin.'
+      -
+        source: "Sorry, we couldn't find that member."
+        translation: "Sorry, we couldn't find that supporter."
+      -
+        source: 'Select how you would like to appear on the membership list.'
+        translation: 'Select how you would like to appear on the supporter list.'
+      -
+        source: 'Login has expired. Please use Member Check to generate a new login link.'
+        translation: 'Login has expired. Please use Check Supporter Status to generate a new login link.'
+      -
+        source: 'Invalid payment credentials. Please return to <a href="@url">registration page</a> and complete membership details.'
+        translation: 'Invalid payment credentials. Please return to <a href="@url">registration page</a> and complete supporter details.'
+      -
+        source: 'member portal'
+        translation: 'supporter portal'
+      -
+        source: '<strong>Please note:</strong> You already have registered the following members: %members. For more details, please go to the @member_portal.'
+        translation: '<strong>Please note:</strong> You have already registered the following supporters: %members. For more details, please go to the @member_portal.'
+      -
+        source: 'A member has previously been registered with the address :email. Please visit our @member_portal to confirm your membership status.'
+        translation: 'A supporter has previously been registered with the address :email. Please visit our @member_portal to confirm your supporter status.'
+      -
+        source: 'A membership has already been registered with this email address. Please visit our <a href="@url">member portal</a> to confirm your membership status.'
+        translation: 'A supporter has already been registered with this email address. Please visit our <a href="@url">supporter portal</a> to confirm your supporter status.'
+      -
+        source: 'A membership has already been registered with a similar address for a popular domain. Please visit our <a href="@url">member portal</a> to confirm your membership status.'
+        translation: 'A supporter has already been registered with a similar address for a popular domain. Please visit our <a href="@url">supporter portal</a> to confirm your supporter status.'
+      -
+        source: 'Note: You have previously registered: @email. Please visit our <a href="@url">member portal</a> to confirm your membership status.'
+        translation: 'Note: You have previously registered: @email. Please visit our <a href="@url">supporter portal</a> to confirm your supporter status.'
+      -
+        source: 'Note: Already entered for another member: @email. Email is only required for the first member, but must be unique if entered.'
+        translation: 'Note: Already entered for another supporter: @email. Email is only required for the first supporter, but must be unique if entered.'
+      -
+        source: 'You may not use the same email for multiple members: @email. Email is only required for the first member, but must be unique if entered.'
+        translation: 'You may not use the same email for multiple supporters: @email. Email is only required for the first supporter, but must be unique if entered.'
+      -
+        source: 'Public member list is not available.'
+        translation: 'Public supporter list is not available.'
+      -
+        source: 'Member No'
+        translation: 'Supporter No'

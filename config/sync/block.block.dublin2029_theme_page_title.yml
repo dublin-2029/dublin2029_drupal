@@ -1,6 +1,6 @@
 uuid: 9dae5e1e-6126-4515-a4f6-23e0a5a43e2f
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - dublin2029_drupal_theme

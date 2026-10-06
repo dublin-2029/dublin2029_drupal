@@ -32,6 +32,16 @@
   block-size: 100%;
 }
 
+/* On narrow screens the card content stacks/wraps under the icon at full
+   150px, leaving little room for the title, price and description - shrink
+   it down so it still reads clearly but no longer dominates the card. */
+@media (max-width: 768px) {
+  #regform .member-type-card__icon {
+    inline-size: 4.6875rem;
+    block-size: 4.6875rem;
+  }
+}
+
 #regform .member-type-card__content {
   flex: 1 1 auto;
   min-width: 0;

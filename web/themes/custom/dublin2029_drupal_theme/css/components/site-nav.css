@@ -5,8 +5,8 @@
  * menus).
  *
  * Colors reference Registration Theme's --rt-* tokens - see header.css.
- * Hover/active uses --rt-primary-500 (raw), not -600: the original accent
- * color (#0085ca) was brighter than the primary color, not darker.
+ * Hover/active uses the accent color (#0085ca) directly, since no --rt-*
+ * token can reach its hue.
  */
 
 .site-masthead__nav nav {
@@ -46,7 +46,7 @@
 .site-masthead__nav .menu-item a:focus,
 .site-masthead__nav .menu-item a.is-active,
 .site-masthead__nav .menu-item--active-trail > a {
-  color: var(--rt-primary-500);
+  color: #0085ca;
 }
 
 .site-nav__toggle {

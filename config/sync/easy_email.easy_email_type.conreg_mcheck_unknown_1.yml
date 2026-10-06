@@ -3,27 +3,27 @@ langcode: en
 status: true
 dependencies: {  }
 id: conreg_mcheck_unknown_1
-label: 'ConReg: member not found (event 1)'
-key: null
+label: 'ConReg: supporter not found'
+key: ''
 recipient: {  }
 cc: {  }
 bcc: {  }
-fromName: null
-fromAddress: null
-replyToAddress: null
-subject: 'Your [event_name] support status'
-inboxPreview: null
+fromName: ''
+fromAddress: ''
+replyToAddress: ''
+subject: 'Your [conreg:event-name] support status'
+inboxPreview: 'We can find no entry for this email address. If you think this is incorrect, please contact us.'
 bodyHtml:
-  value: '<p>Hi,</p><p>Thank you for checking your supporter status for [event_name].</p><p>We can find no entry for this email address. If you think this is incorrect, please contact us.</p><p>Best wishes,</p><p>The [event_name] team.</p>'
+  value: '<p>Hi,</p><p>Thank you for checking your supporter status for [conreg:event-name].</p><p>We can find no entry for this email address. If you think this is incorrect, please contact us.</p><p>Best wishes,</p><p>The [conreg:event-name] team.</p>'
   format: full_html
-bodyPlain: null
+bodyPlain: "Hi,\r\n\r\nThank you for checking your supporter status for [conreg:event-name].\r\n\r\nWe can find no entry for this email address. If you think this is incorrect, please contact us.\r\n\r\nBest wishes,\r\n\r\nThe [conreg:event-name] team."
 generateBodyPlain: false
 attachment: {  }
-saveAttachment: null
-attachmentScheme: null
-attachmentDirectory: null
+saveAttachment: false
+attachmentScheme: public
+attachmentDirectory: ''
 saveEmail: true
 allowSavingEmail: true
 purgeEmails: false
 purgeInterval: null
-purgePeriod: days
+purgePeriod: null
