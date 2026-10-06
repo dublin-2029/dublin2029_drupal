@@ -26,4 +26,11 @@
 
 # Local dev/IDE noise.
 .ddev/.env*
+# Use this to set a deterministic DB port for local dev
+.ddev/config.db-port.yaml
+# Used to for composer.local.json to map when using ddev
+.ddev/docker-compose.mounts.yaml
 *.log
+/.editorconfig
+# ddev-saml-idp-certs
+.ddev/saml-idp/certs/
