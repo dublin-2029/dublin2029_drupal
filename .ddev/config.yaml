@@ -4,7 +4,6 @@ docroot: web
 php_version: "8.3"
 webserver_type: nginx-fpm
 xdebug_enabled: false
-additional_hostnames: []
 additional_fqdns: []
 database:
     type: mariadb
@@ -14,6 +13,33 @@ composer_version: "2"
 web_environment: []
 nodejs_version: "24"
 corepack_enable: true
+
+# 
+hooks:
+  pre-start:
+    - exec-host: | 
+        if [ -n "${DDEV_PRIMARY_URL:-}" ]; then
+          primary_host=$(echo "$DDEV_PRIMARY_URL" | sed -E 's|https?://||; s|:[0-9]+||')
+
+          # Ensure .env.web exists
+          touch .ddev/.env.web
+
+          # Append SAML_SP_PRIMARY_HOST if it does not exist.
+          if ! grep -q "^SAML_SP_PRIMARY_HOST=" .ddev/.env.web; then
+            echo "SAML_SP_PRIMARY_HOST=$primary_host" >> .ddev/.env.web
+          fi
+
+          # Append SAML_IDP_PRIMARY_HOST if it does not exist.
+          if ! grep -q "^SAML_IDP_PRIMARY_HOST=" .ddev/.env.web; then
+            echo "SAML_IDP_PRIMARY_HOST=$primary_host" >> .ddev/.env.web
+          fi
+        fi
+
+        # Add secret salt for IDP if it does not exist
+        if ! grep -q "^SSP_SECRET_SALT=" .ddev/.env.web; then
+          salt=$(LC_ALL=C tr -c -d '0123456789abcdefghijklmnopqrstuvwxyz' </dev/urandom | dd bs=32 count=1 2>/dev/null)
+          echo "SSP_SECRET_SALT=$salt" >> .ddev/.env.web
+        fi
 
 # Key features of DDEV's config.yaml:
 

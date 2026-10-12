@@ -38,3 +38,9 @@
 /.editorconfig
 # ddev-saml-idp-certs
 .ddev/saml-idp/certs/
+
+# 
+simplesaml/dev/certs/*
+simplesaml/dev/cache/admin/*
+simplesaml/dev/cache/core/*
+simplesaml/prod/certs/*

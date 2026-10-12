@@ -1,5 +1,4 @@
 <?php
-// #ddev-generated
 /**
  * SAML 2.0 SP metadata for SimpleSAMLphp.
  *
@@ -9,7 +8,7 @@
 
 $sp_host = getenv('SAML_SP_PRIMARY_HOST');
 
-$sp_cert_file = '/var/www/simplesamlphp/certs/sp.crt';
+$sp_cert_file = '/var/www/html/simplesaml/dev/certs/sp_simplesaml.crt';
 if (!file_exists($sp_cert_file)) {
   throw new \RuntimeException(sprintf('SP certificate file not found at %s, have you forgotten to copy it?', $sp_cert_file));
 }
