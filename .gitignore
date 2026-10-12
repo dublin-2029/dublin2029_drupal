@@ -39,8 +39,17 @@
 # ddev-saml-idp-certs
 .ddev/saml-idp/certs/
 
-# 
+# Files to ignore for SimpleSAML
 simplesaml/dev/certs/*
 simplesaml/dev/cache/admin/*
 simplesaml/dev/cache/core/*
+simplesaml/dev/log/*
+simplesaml/dev/tmp/*
+simplesaml/dev/data/*
+# 
 simplesaml/prod/certs/*
+simplesaml/prod/cache/admin/*
+simplesaml/prod/cache/core/*
+simplesaml/prod/log/*
+simplesaml/prod/tmp/*
+simplesaml/prod/data/*
