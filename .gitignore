@@ -41,17 +41,13 @@
 
 # Files to ignore for SimpleSAML
 simplesaml/dev/certs/*
-simplesaml/dev/cache/admin/*
-simplesaml/dev/cache/core/*
-simplesaml/dev/cache/saml/*
+simplesaml/dev/cache/*
 simplesaml/dev/log/*
 simplesaml/dev/tmp/*
 simplesaml/dev/data/*
 # 
 simplesaml/prod/certs/*
-simplesaml/prod/cache/admin/*
-simplesaml/prod/cache/core/*
-simplesaml/prod/cache/saml/*
+simplesaml/prod/cache/*
 simplesaml/prod/log/*
 simplesaml/prod/tmp/*
 simplesaml/prod/data/*
