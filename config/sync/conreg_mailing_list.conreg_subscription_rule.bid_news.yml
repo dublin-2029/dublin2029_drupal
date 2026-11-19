@@ -1,7 +1,9 @@
 uuid: 6dda3019-6eb3-4f65-b0af-6f6b41f7fb2b
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - conreg.event.dublin_2029
 id: bid_news
 label: 'Bid news'
 description: ''

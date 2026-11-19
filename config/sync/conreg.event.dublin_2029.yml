@@ -1,3 +1,17 @@
+uuid: a3e5d790-f9f6-4106-99de-682e9a4009d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - easy_email.easy_email_type.conreg_mcheck_confirm_1
+    - easy_email.easy_email_type.conreg_mcheck_unknown_1
+    - easy_email.easy_email_type.conreg_registration_1
+    - key.key.stripe_public
+    - key.key.stripe_secret
+    - system.menu.tools
+id: dublin_2029
+label: 'Dublin 2029'
+eid: 1
 payments:
   system: Stripe
   mode: Test
@@ -29,6 +43,8 @@ member_upgrades: {  }
 member_no_digits: '4'
 registration_intro: 'Thank you for choosing to support the Dublin 2029 bid. Your money will help us put forward the best bid for a Worldcon we can.'
 payment_intro: 'This is a test payment. Do not use real credit cards. No charges will be applied. Sample test card: 4242424242424242 (use any future date and any 3 digits for CVV).'
+closed_message_text: ''
+closed_message_format: basic_html
 communications_method:
   options:
     - E|Electronic|1
@@ -50,6 +66,9 @@ member_listing_page:
   deduplicate: false
 display:
   page_size: 50
+discount:
+  enable: false
+  free_every: null
 add-ons:
   Donation:
     addon:
@@ -236,8 +255,29 @@ conreg_options:
   options:
     - '1|1|Get news and updates about the bid||0|1|Default|0|0|'
     - '2|1|Get updates for volunteers||0|1|Default|0|0|'
-closed_message_text: ''
-closed_message_format: basic_html
-discount:
-  enable: 0
-  free_every: null
+menu_links:
+  register:
+    enabled: true
+    title: Register
+    menu_name: tools
+    parent: ''
+    weight: 0
+    only_open: false
+  list:
+    enabled: true
+    title: 'List Supporters'
+    menu_name: tools
+    parent: ''
+    weight: 1
+  check:
+    enabled: true
+    title: 'Check Supporter Status'
+    menu_name: tools
+    parent: ''
+    weight: 2
+  portal:
+    enabled: true
+    title: 'Supporter Portal'
+    menu_name: tools
+    parent: ''
+    weight: 3

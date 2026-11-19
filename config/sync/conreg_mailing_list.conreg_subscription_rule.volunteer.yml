@@ -1,7 +1,9 @@
 uuid: 1e553072-6066-4f4e-a171-3d24ec1f3b2b
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - conreg.event.dublin_2029
 id: volunteer
 label: Volunteer
 description: ''
